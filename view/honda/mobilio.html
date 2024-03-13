@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda Mobilio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+  <!-- Placeholder konten -->
+  <template-nav id="navElement"></template-nav>
+
+  <div class="container" id="tombolPilihElement">
+    <div class="row mt-3 mt-lg-4">
+      <div class="col">
+        <p class="textContentDiatasTombol text-sm-start fw-semibold">Honda Mobilio:</p>
+      </div>
+    </div>
+    <div class="select-menu">
+      <div class="select-btn">
+        <span class="sBtn-text"><span class="opacity-50">Pilih tahun/generasi disini....</span></span>
+      </div>
+      <ul class="options">
+        <li class="option" id="FL">
+          <span class="option-text">Facelift (Terbaru)</span>
+        </li>
+        <li class="option" id="NFL">
+          <span class="option-text">Non-Facelift</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container kontenUtamaElement" id="kontenUtama"></div>
+
+  <div class="divPlaceholder"></div>
+
+  <template-footer id="footerElement"></template-footer>
+
+  <!-- Script -->
+  <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../../template/templateManajer.js"></script>
+  <script src="../../assets/script.js"></script>
+  <script src="../../controller/hondaController/mobilioController.js"></script>
+</body>
+
+</html>

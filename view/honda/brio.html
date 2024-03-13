@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honda Brio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+  <!-- Placeholder konten -->
+  <template-nav id="navElement"></template-nav>
+
+  <div class="container" id="tombolPilihElement">
+    <div class="row mt-3 mt-lg-4">
+      <div class="col">
+        <p class="textContentDiatasTombol text-sm-start fw-semibold">Honda Brio:</p>
+      </div>
+    </div>
+    <div class="select-menu">
+      <div class="select-btn">
+        <span class="sBtn-text"><span class="opacity-50">Pilih tahun/generasi disini....</span></span>
+      </div>
+      <ul class="options">
+        <li class="option" id="tombolGenerasi2FL">
+          <span class="option-text">Generasi 2 FL (Terbaru)</span>
+        </li>
+        <li class="option" id="tombolGenerasi2NFL">
+          <span class="option-text">Generasi 2 NFL</span>
+        </li>
+        <li class="option" id="tombolGenerasi1FL">
+          <span class="option-text">Generasi 1 FL</span>
+        </li>
+        <li class="option" id="tombolGenerasi1_2013">
+          <span class="option-text">Generasi 1 NFL - 2013</span>
+        </li>
+        <li class="option" id="tombolGenerasi1_2012">
+          <span class="option-text">Generasi 1 NFL - 2012</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container kontenUtamaElement" id="kontenUtama"></div>
+
+  <div class="divPlaceholder"></div>
+
+  <template-footer id="footerElement"></template-footer>
+
+  <!-- Script -->
+  <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../../template/templateManajer.js"></script>
+  <script src="../../assets/script.js"></script>
+  <script src="../../controller/hondaController/brioController.js"></script>
+</body>
+
+</html>

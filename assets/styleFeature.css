@@ -1,0 +1,119 @@
+.wrapper {
+  padding: 0 50px;
+  position: relative;
+}
+
+.wrapper i {
+  height: 45px;
+  width: 45px;
+  background: #555;
+  color: #eee;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 1.25rem;
+}
+
+.wrapper i:first-child {
+  left: -6px;
+}
+
+.wrapper i:last-child {
+  right: -6px;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 1.4);
+  gap: 10px;
+  overflow-x: auto;
+  padding-left: 0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc(100% / 2.2);
+  }
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 90px;
+  letter-spacing: none;
+  background: #d0d0d0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 300px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc(100% / 1.1);
+  }
+
+  .carousel .card {
+    height: 130px;
+  }
+}
+
+.select-menu .select-btn {
+  display: flex;
+  height: 55px;
+  background: #fff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+.select-menu .options {
+  position: relative;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+  display: none;
+}
+
+.select-menu.active .options {
+  display: block;
+}
+
+.options .option {
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.options .option:hover {
+  background: #F2F2F2;
+}
+
+.option i {
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+.option .option-text {
+  font-size: 18px;
+  color: #333;
+}
